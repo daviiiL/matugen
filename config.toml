@@ -1,0 +1,51 @@
+[config]
+reload_apps = true
+set_wallpaper = true
+wallpaper_tool = "Swww"
+swww_options = [
+  "--transition-type",
+  "center",
+  "--transition-step",
+  "60",
+  "--transition-fps",
+  "120",
+]
+
+[config.reload_apps_list]
+kitty = true
+
+[templates.kitty]
+input_path = "~/.config/matugen/templates/kitty-colors.conf"
+output_path = '~/.config/kitty/kitty.conf'
+
+[templates.gtk3]
+input_path = "~/.config/matugen/templates/gtk-colors.css"
+output_path = '~/.config/gtk-3.0/colors.css'
+
+[templates.gtk4]
+input_path = "~/.config/matugen/templates/gtk-colors.css"
+output_path = '~/.config/gtk-4.0/colors.css'
+
+[templates.anyrun]
+input_path = "~/.config/matugen/templates/gtk-colors.css"
+output_path = '~/.config/anyrun/colors.css'
+
+[templates.hyprland]
+input_path = "~/.config/matugen/templates/hyprland-colors.conf"
+output_path = '~/.config/hypr/colors.conf'
+
+[templates.qt5ct]
+input_path = "~/.config/matugen/templates/qtct-colors.conf"
+output_path = '~/.config/qt5ct/colors/matugen.conf'
+
+[templates.alacritty]
+input_path = "~/.config/matugen/templates/alacritty.toml"
+output_path = '~/.config/alacritty/colors.toml'
+
+[templates.ags]
+input_path = "~/.config/matugen/templates/colors-ags.scss"
+output_path = "~/.config/ags/style/colors.scss"
+
+[templates.neopywal]
+input_path = "~/.config/matugen/templates/colors_neopywal.vim"
+output_path = "~/.cache/wallust/colors_neopywal.vim"

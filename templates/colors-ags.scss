@@ -1,0 +1,33 @@
+$wallpaper: "{{image}}";
+
+<* for name, value in colors *>
+${{name}}: {{value.default.hex}};
+<* endfor *>
+
+$red: #f38ba8;
+$yellow: #f9e2af;
+$green: #a6e3a1;
+$blue: #89b4fa;
+
+$tooltip-bg: #ffffff;
+$fg: {{colors.on_background.default.hex}};
+$bg: {{colors.background.default.hex}};
+$bar-bg: {{colors.on_primary.default.hex}};
+
+$surface: {{colors.surface.default.hex}};
+$overlay: {{colors.secondary.default.hex}};
+
+$accent: {{colors.primary.default.hex}};
+
+$button-enabled-hover: $accent;
+$button-enabled: adjust_color($button-enabled-hover, $lightness: -10%);
+
+$button-disabled: $surface;
+$button-disabled-hover: adjust_color($button-disabled, $alpha: +0.1);
+
+@mixin border {
+  // border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow:
+    // inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 3px 5px 1px rgba(0, 0, 0, 0.3);
+}
