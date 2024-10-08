@@ -1,0 +1,22 @@
+---@type ChadrcConfig
+local M = {}
+
+M.base46 = {
+  theme = "ashes",
+
+  changed_themes = {
+    all = {
+      base_16 = {
+        base00 = "{{colors.background.default.hex}}",
+        base01 = "{{colors.primary.default.hex}}",
+      },
+    },
+  },
+}
+M.ui = {
+  hl_override = {
+    Normal = { bg = "{{colors.background.default.hex}}" },
+  },
+}
+
+return M

@@ -46,6 +46,6 @@ output_path = '~/.config/alacritty/colors.toml'
 input_path = "~/.config/matugen/templates/colors-ags.scss"
 output_path = "~/.config/ags/style/colors.scss"
 
-[templates.neopywal]
-input_path = "~/.config/matugen/templates/colors_neopywal.vim"
-output_path = "~/.cache/wallust/colors_neopywal.vim"
+# [templates.nvchad]
+# input_path = "~/.config/matugen/templates/nvchad-chadrc"
+# output_path = "~/.config/nvim/lua/chadrc.lua"

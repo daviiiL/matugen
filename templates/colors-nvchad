@@ -1,0 +1,4 @@
+return {
+	base00 = "{{colors.background.default.hex}}";
+	base01 = "{{colors.on_primary.default.hex}}";
+}
