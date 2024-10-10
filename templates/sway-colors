@@ -1,0 +1,6 @@
+set $background {{colors.background.default.hex}}
+set $foreground {{colors.on_background.default.hex}}
+set $active_indicator {{colors.primary.default.hex}}
+set $active_border {{colors.on_primary.default.hex}}
+set $inactive_border {{colors.background.default.hex}}
+
