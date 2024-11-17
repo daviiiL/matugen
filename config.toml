@@ -27,9 +27,14 @@ output_path = '~/.config/gtk-3.0/colors.css'
 input_path = "~/.config/matugen/templates/gtk-colors.css"
 output_path = '~/.config/gtk-4.0/colors.css'
 
-[templates.wofi]
-input_path = "~/.config/matugen/templates/colors.css"
-output_path = "~/.config/wofi/colors.css"
+# [templates.wofi]
+# input_path = "~/.config/matugen/templates/wofi-colors.css"
+# output_path = "~/.config/wofi/style.css"
+#
+
+[templates.fuzzel]
+input_path = "~/.config/matugen/templates/fuzzel.ini"
+output_path = "~/.config/fuzzel/fuzzel.ini"
 
 [templates.anyrun]
 input_path = "~/.config/matugen/templates/gtk-colors.css"

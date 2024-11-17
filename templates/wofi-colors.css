@@ -1,0 +1,59 @@
+/*
+* Css Colors
+* Generated with Matugen
+*/
+<* for name, value in colors *>
+    @define-color {{name}} {{value.default.hex}};
+<* endfor *>
+
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+window {
+  animation: slideIn 0.2s ease-in-out both;
+}
+
+#outer-box {
+  border: 1px solid @primary;
+  border-radius: 0.6rem;
+  background-color: @background;
+  padding: 2rem;
+}
+
+#entry {
+  margin: 0.15rem 0 0.15rem 0;
+  padding: 0.5rem;
+  animation: slideIn 0.4s ease-in-out both;
+}
+
+#input {
+  margin-bottom: 1rem;
+  animation: fadeIn 0.4s ease-in-out both;
+}
+
+#entry:selected {
+  background-color: @on_primary;
+  font-size: 14pt;
+  font-weight: semi-bold;
+}
+
+#entry:selected #text {
+  color: @primary;
+}
