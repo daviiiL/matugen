@@ -27,6 +27,10 @@ output_path = '~/.config/gtk-3.0/colors.css'
 input_path = "~/.config/matugen/templates/gtk-colors.css"
 output_path = '~/.config/gtk-4.0/colors.css'
 
+[templates.wofi]
+input_path = "~/.config/matugen/templates/colors.css"
+output_path = "~/.config/wofi/colors.css"
+
 [templates.anyrun]
 input_path = "~/.config/matugen/templates/gtk-colors.css"
 output_path = '~/.config/anyrun/colors.css'
@@ -46,4 +50,3 @@ output_path = '~/.config/alacritty/colors.toml'
 [templates.ags]
 input_path = "~/.config/matugen/templates/colors-ags.scss"
 output_path = "~/.config/ags/style/colors.scss"
-
