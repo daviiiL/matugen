@@ -37,7 +37,7 @@ input_path = "~/.config/matugen/templates/fuzzel.ini"
 output_path = "~/.config/fuzzel/fuzzel.ini"
 
 [templates.anyrun]
-input_path = "~/.config/matugen/templates/gtk-colors.css"
+input_path = "~/.config/matugen/templates/colors.css"
 output_path = '~/.config/anyrun/colors.css'
 
 [templates.hyprland]
