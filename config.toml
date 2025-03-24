@@ -28,11 +28,11 @@ input_path = "~/.config/matugen/templates/gtk-colors.css"
 output_path = '~/.config/gtk-4.0/colors.css'
 
 [templates.fuzzel]
-input_path = "~/.config/matugen/templates/fuzzel.ini"
+input_path = "~/.config/matugen/templates/fuzzel-colors.ini"
 output_path = "~/.config/fuzzel/fuzzel.ini"
 
 [templates.anyrun]
-input_path = "~/.config/matugen/templates/colors.css"
+input_path = "~/.config/matugen/templates/generic-colors.css"
 output_path = '~/.config/anyrun/colors.css'
 
 [templates.hyprland]
@@ -44,7 +44,7 @@ input_path = "~/.config/matugen/templates/qtct-colors.conf"
 output_path = '~/.config/qt5ct/colors/matugen.conf'
 
 [templates.alacritty]
-input_path = "~/.config/matugen/templates/alacritty.toml"
+input_path = "~/.config/matugen/templates/alacritty-colors.toml"
 output_path = '~/.config/alacritty/colors.toml'
 
 [templates.ags]
@@ -52,13 +52,14 @@ input_path = "~/.config/matugen/templates/ags-colors.scss"
 output_path = "~/.config/ags/style/colors.scss"
 
 [templates.ghostty]
-input_path = "~/.config/matugen/templates/ghostty"
+input_path = "~/.config/matugen/templates/ghostty-colors"
 output_path = "~/.config/ghostty/config"
+
 [templates.sway]
 input_path = '~/.config/matugen/templates/sway-colors.conf'
 output_path = '~/.config/sway/colors.conf'
 post_hook = 'swaymsg reload'
 
 [templates.waybar]
-input_path = "~/.config/matugen/templates/colors.css"
+input_path = "~/.config/matugen/templates/generic-colors.css"
 output_path = "~/.config/waybar/colors.css"
