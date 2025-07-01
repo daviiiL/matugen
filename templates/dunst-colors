@@ -50,10 +50,9 @@ force_xinerama = false
 mouse_left_click = close_current
 mouse_middle_click = do_action, close_current
 mouse_right_click = close_all
-separator_color = frame
 frame_color = "{{colors.primary.default.hex}}"
 highlight = "{{colors.primary.default.hex}}"
-separator_color= "{{colors.outline.default.hex}}"
+separator_color = "{{colors.outline.default.hex}}"
 [experimental]
 per_monitor_dpi = false
 [urgency_low]
@@ -71,5 +70,3 @@ timeout = 0
 background = "{{colors.surface.default.hex}}"
 foreground = "{{colors.on_surface.default.hex}}"
 highlight = "{{colors.error.default.hex}}"
-
-
