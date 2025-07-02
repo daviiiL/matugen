@@ -64,9 +64,9 @@ output_path = "~/.config/ghostty/config"
 input_path = "~/.config/matugen/templates/generic-colors.css"
 output_path = "~/.config/waybar/colors.css"
 
-# [templates.niri]
-# input_path = "~/.config/matugen/templates/config.kdl"
-# output_path = "~/.config/niri/config.kdl"
+[templates.niri]
+input_path = "~/.config/matugen/templates/config.kdl"
+output_path = "~/.config/niri/config.kdl"
 
 [templates.quickshell]
 input_path = "~/.config/matugen/templates/colors.json"
