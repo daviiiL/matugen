@@ -16,43 +16,43 @@ swww_options = [
 kitty = true
 
 [templates.kitty]
-input_path = "~/.config/matugen/templates/kitty-colors.conf"
+input_path = "~/.config/matugen/templates/colors/kitty-colors.conf"
 output_path = "~/.config/kitty/kitty.conf"
 
 [templates.gtk3]
-input_path = "~/.config/matugen/templates/gtk-colors.css"
+input_path = "~/.config/matugen/templates/colors/gtk-colors.css"
 output_path = "~/.config/gtk-3.0/colors.css"
 
 [templates.gtk4]
-input_path = "~/.config/matugen/templates/gtk-colors.css"
+input_path = "~/.config/matugen/templates/colors/gtk-colors.css"
 output_path = "~/.config/gtk-4.0/colors.css"
 
 [templates.fuzzel]
-input_path = "~/.config/matugen/templates/fuzzel-colors.ini"
+input_path = "~/.config/matugen/templates/configs/fuzzel-config.ini"
 output_path = "~/.config/fuzzel/fuzzel.ini"
 
 [templates.anyrun]
-input_path = "~/.config/matugen/templates/generic-colors.css"
+input_path = "~/.config/matugen/templates/colors/generic-colors.css"
 output_path = "~/.config/anyrun/colors.css"
 
 [templates.hyprland]
-input_path = "~/.config/matugen/templates/hyprland-colors.conf"
+input_path = "~/.config/matugen/templates/colors/hyprland-colors.conf"
 output_path = "~/.config/hypr/colors.conf"
 
 [templates.qt5ct]
-input_path = "~/.config/matugen/templates/qtct-colors.conf"
+input_path = "~/.config/matugen/templates/colors/qtct-colors.conf"
 output_path = "~/.config/qt5ct/colors/matugen.conf"
 
 [templates.alacritty]
-input_path = "~/.config/matugen/templates/alacritty-colors.toml"
+input_path = "~/.config/matugen/templates/colors/alacritty-colors.toml"
 output_path = "~/.config/alacritty/colors.toml"
 
 [templates.ags]
-input_path = "~/.config/matugen/templates/ags-colors.scss"
+input_path = "~/.config/matugen/templates/colors/ags-colors.scss"
 output_path = "~/.config/ags/style/colors.scss"
 
 [templates.ghostty]
-input_path = "~/.config/matugen/templates/ghostty-colors"
+input_path = "~/.config/matugen/templates/configs/ghostty-config"
 output_path = "~/.config/ghostty/config"
 
 # [templates.sway]
@@ -61,13 +61,13 @@ output_path = "~/.config/ghostty/config"
 # post_hook = 'swaymsg reload'
 
 [templates.waybar]
-input_path = "~/.config/matugen/templates/generic-colors.css"
+input_path = "~/.config/matugen/templates/colors/generic-colors.css"
 output_path = "~/.config/waybar/colors.css"
 
 [templates.niri]
-input_path = "~/.config/matugen/templates/config.kdl"
+input_path = "~/.config/matugen/templates/configs/niri-config.kdl"
 output_path = "~/.config/niri/config.kdl"
 
 [templates.quickshell]
-input_path = "~/.config/matugen/templates/colors.json"
+input_path = "~/.config/matugen/templates/colors/quickshell-colors.json"
 output_path = "~/.config/quickshell/colors.json"
