@@ -57,7 +57,7 @@ layout {
         proportion 0.5
     }
     focus-ring {
-        width 4
+        width 1
         active-color "{{colors.primary_fixed_dim.default.hex}}"
         inactive-color "#505050"
     }
