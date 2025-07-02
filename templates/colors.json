@@ -2,4 +2,6 @@
 	<* for name, value in colors *>
 	"{{name}}": "{{value.default.hex}}",
 	<* endfor *>
+	"black": "#000000",
+	"white": "#ffffff"
 }
