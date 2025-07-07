@@ -111,7 +111,7 @@ window-rule {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Shift+W {
-      spawn "./scripts/pickwall.sh"
+      spawn "sh" "-c" "$HOME/.config/niri/scripts/pickwall.sh"
     }
 
     Mod+T { spawn "swaync-client" "-t"; }
