@@ -13,7 +13,10 @@ swww_options = [
 
 
 [config.reload_apps_list]
+# kitty = true
+ghostty = true
 kitty = true
+alacritty = true
 
 [templates.kitty]
 input_path = "~/.config/matugen/templates/colors/kitty-colors.conf"
@@ -35,9 +38,9 @@ output_path = "~/.config/fuzzel/fuzzel.ini"
 input_path = "~/.config/matugen/templates/colors/generic-colors.css"
 output_path = "~/.config/anyrun/colors.css"
 
-[templates.hyprland]
-input_path = "~/.config/matugen/templates/colors/hyprland-colors.conf"
-output_path = "~/.config/hypr/colors.conf"
+# [templates.hyprland]
+# input_path = "~/.config/matugen/templates/colors/hyprland-colors.conf"
+# output_path = "~/.config/hypr/colors.conf"
 
 [templates.qt5ct]
 input_path = "~/.config/matugen/templates/colors/qtct-colors.conf"
@@ -47,9 +50,9 @@ output_path = "~/.config/qt5ct/colors/matugen.conf"
 input_path = "~/.config/matugen/templates/colors/alacritty-colors.toml"
 output_path = "~/.config/alacritty/colors.toml"
 
-[templates.ags]
-input_path = "~/.config/matugen/templates/colors/ags-colors.scss"
-output_path = "~/.config/ags/style/colors.scss"
+# [templates.ags]
+# input_path = "~/.config/matugen/templates/colors/ags-colors.scss"
+# output_path = "~/.config/ags/style/colors.scss"
 
 [templates.ghostty]
 input_path = "~/.config/matugen/templates/configs/ghostty-config"
@@ -60,9 +63,9 @@ output_path = "~/.config/ghostty/config"
 # output_path = "~/.config/sway/colors.conf"
 # post_hook = 'swaymsg reload'
 
-[templates.waybar]
-input_path = "~/.config/matugen/templates/colors/generic-colors.css"
-output_path = "~/.config/waybar/colors.css"
+# [templates.waybar]
+# input_path = "~/.config/matugen/templates/colors/generic-colors.css"
+# output_path = "~/.config/waybar/colors.css"
 
 [templates.niri]
 input_path = "~/.config/matugen/templates/configs/niri-config.kdl"
@@ -77,5 +80,5 @@ input_path = "~/.config/matugen/templates/colors/generic-colors.css"
 output_path = "~/.config/swaync/colors.css"
 
 [templates.hyprlock]
-input_path = "~/.config/matugen/templates/configs/hyprlock.conf"
+input_path = "~/.config/matugen/templates/configs/hyprlock-config.conf"
 output_path = "~/.config/hypr/hyprlock.conf"
