@@ -76,6 +76,11 @@ layout {
 spawn-at-startup "swaync"
 spawn-at-startup "quickshell"
 spawn-at-startup "swww-daemon"
+spawn-at-startup "hypridle"
+
+// xwayland support
+environment { DISPLAY: ":0"; }
+spawn-at-startup "xwayland-satellite"
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
@@ -108,9 +113,12 @@ binds {
     Mod+Shift+W {
       spawn "./scripts/pickwall.sh"
     }
+
+    Mod+T { spawn "swaync-client" "-t"; }
+    
     Mod+Return hotkey-overlay-title="Open a Terminal: Ghostty" { spawn "ghostty"; }
     Mod+Space hotkey-overlay-title="Run an Application: Anyrun" { spawn "anyrun"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+" "-l" "1.5"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
