@@ -115,7 +115,7 @@ binds {
     }
 
     Mod+T { spawn "swaync-client" "-t"; }
-    
+
     Mod+Return hotkey-overlay-title="Open a Terminal: Ghostty" { spawn "ghostty"; }
     Mod+Space hotkey-overlay-title="Run an Application: Anyrun" { spawn "anyrun"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
@@ -123,8 +123,10 @@ binds {
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
-    XF86MonBrightnessUp   allow-when-locked=true { spawn "brillo" "-q" "-u" "500000" "-A" "5"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "brillo" "-q" "-u" "500000" "-U" "5"; }
+    // XF86MonBrightnessUp   allow-when-locked=true { spawn "brillo" "-q" "-u" "500000" "-A" "5"; }
+    // XF86MonBrightnessDown allow-when-locked=true { spawn "brillo" "-q" "-u" "500000" "-U" "5"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "s" "+5" ; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "s" "5-" ; }
     Mod+O repeat=false { toggle-overview; }
     Mod+Q { close-window; }
     Mod+Left  { focus-column-left; }
