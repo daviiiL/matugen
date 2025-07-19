@@ -110,11 +110,11 @@ window-rule {
 
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
-    Mod+Shift+W {
+    Mod+Shift+W hotkey-overlay-title="Change wallpaper & theme" {
       spawn "sh" "-c" "$HOME/.config/niri/scripts/pickwall.sh"
     }
 
-    Mod+T { spawn "swaync-client" "-t"; }
+    Mod+T hotkey-overlay-title="Open Notification Center" { spawn "swaync-client" "-t"; }
 
     Mod+Return hotkey-overlay-title="Open a Terminal: Ghostty" { spawn "ghostty"; }
     Mod+Space hotkey-overlay-title="Run an Application: Anyrun" { spawn "anyrun"; }
