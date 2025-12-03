@@ -35,10 +35,6 @@ output_path = "~/.config/gtk-4.0/colors.css"
 input_path = "~/.config/matugen/templates/configs/fuzzel-config.ini"
 output_path = "~/.config/fuzzel/fuzzel.ini"
 
-[templates.anyrun]
-input_path = "~/.config/matugen/templates/colors/generic-colors.css"
-output_path = "~/.config/anyrun/colors.css"
-
 [templates.hyprland]
 input_path = "~/.config/matugen/templates/colors/hyprland-colors.conf"
 output_path = "~/.config/hypr/colors.conf"
@@ -51,13 +47,25 @@ output_path = "~/.config/qt5ct/colors/matugen.conf"
 input_path = "~/.config/matugen/templates/colors/alacritty-colors.toml"
 output_path = "~/.config/alacritty/colors.toml"
 
-# [templates.ags]
-# input_path = "~/.config/matugen/templates/colors/ags-colors.scss"
-# output_path = "~/.config/ags/style/colors.scss"
-
 [templates.ghostty]
 input_path = "~/.config/matugen/templates/configs/ghostty-config"
 output_path = "~/.config/ghostty/config"
+
+[templates.quickshell]
+input_path = "~/.config/matugen/templates/colors/quickshell-colors.json"
+output_path = "~/.config/quickshell/colors.json"
+
+[templates.wezterm]
+input_path = "~/.config/matugen/templates/configs/wezterm-colors.lua"
+output_path = "~/.config/quickshell/colors.lua"
+
+# [templates.anyrun]
+# input_path = "~/.config/matugen/templates/colors/generic-colors.css"
+# output_path = "~/.config/anyrun/colors.css"
+
+# [templates.ags]
+# input_path = "~/.config/matugen/templates/colors/ags-colors.scss"
+# output_path = "~/.config/ags/style/colors.scss"
 
 # [templates.sway]
 # input_path = "~/.config/matugen/templates/sway-colors.conf"
@@ -68,18 +76,13 @@ output_path = "~/.config/ghostty/config"
 # input_path = "~/.config/matugen/templates/colors/generic-colors.css"
 # output_path = "~/.config/waybar/colors.css"
 
-[templates.niri]
-input_path = "~/.config/matugen/templates/configs/niri-config.kdl"
-output_path = "~/.config/niri/config.kdl"
+# [templates.niri]
+# input_path = "~/.config/matugen/templates/configs/niri-config.kdl"
+# output_path = "~/.config/niri/config.kdl"
+# [templates.swaync]
+# input_path = "~/.config/matugen/templates/colors/generic-colors.css"
+# output_path = "~/.config/swaync/colors.css"
 
-[templates.quickshell]
-input_path = "~/.config/matugen/templates/colors/quickshell-colors.json"
-output_path = "~/.config/quickshell/colors.json"
-
-[templates.swaync]
-input_path = "~/.config/matugen/templates/colors/generic-colors.css"
-output_path = "~/.config/swaync/colors.css"
-
-[templates.hyprlock]
-input_path = "~/.config/matugen/templates/configs/hyprlock-config.conf"
-output_path = "~/.config/hypr/hyprlock.conf"
+# [templates.hyprlock]
+# input_path = "~/.config/matugen/templates/configs/hyprlock-config.conf"
+# output_path = "~/.config/hypr/hyprlock.conf"
