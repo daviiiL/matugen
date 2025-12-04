@@ -57,7 +57,7 @@ output_path = "~/.config/quickshell/colors.json"
 
 [templates.wezterm]
 input_path = "~/.config/matugen/templates/configs/wezterm-colors.lua"
-output_path = "~/.config/quickshell/colors.lua"
+output_path = "~/.config/wezterm/colors.lua"
 
 # [templates.anyrun]
 # input_path = "~/.config/matugen/templates/colors/generic-colors.css"

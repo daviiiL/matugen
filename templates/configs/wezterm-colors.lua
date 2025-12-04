@@ -2,30 +2,18 @@
 -- colors.lua
 
 local color_scheme = {
-	-- The default text color
 	foreground = "{{colors.on_surface.default.hex}}",
-	-- The default background color
 	background = "{{colors.background.default.hex}}",
 
-	-- Overrides the cell background color when the current cell is occupied by the
-	-- cursor and the cursor style is set to Block
 	cursor_bg = "{{colors.primary.default.hex}}",
-	-- Overrides the text color when the current cell is occupied by the cursor
 	cursor_fg = "{{colors.on_primary.default.hex}}",
-	-- Specifies the border color of the cursor when the cursor style is set to Block,
-	-- or the color of the vertical or horizontal bar when the cursor style is set to
-	-- Bar or Underline.
 	cursor_border = "{{colors.primary.default.hex}}",
 
-	-- the foreground color of selected text
 	selection_fg = "{{colors.on_primary.default.hex}}",
-	-- the background color of selected text
 	selection_bg = "{{colors.primary.default.hex}}",
 
-	-- The color of the scrollbar "thumb"; the portion that represents the current viewport
 	scrollbar_thumb = "{{colors.surface_variant.default.hex}}",
 
-	-- The color of the split lines between panes
 	split = "{{colors.outline.default.hex}}",
 
 	ansi = {
@@ -49,25 +37,9 @@ local color_scheme = {
 		"#A6ADC8",
 	},
 
-	-- Arbitrary colors of the palette in the range from 16 to 255
 	indexed = { [136] = "{{colors.tertiary.default.hex}}" },
-
-	-- Since: 20220319-142410-0fcdea07
-	-- When the IME, a dead key or a leader key are being processed and are effectively
-	-- holding input pending the result of input composition, change the cursor
-	-- to this color to give a visual cue about the compose state.
 	compose_cursor = "{{colors.secondary.default.hex}}",
-
-	-- Colors for copy_mode and quick_select
-	-- available since: 20220807-113146-c2fee766
-	-- In copy_mode, the color of the active text is:
-	-- 1. copy_mode_active_highlight_* if additional text was selected using the mouse
-	-- 2. selection_* otherwise
 	copy_mode_active_highlight_bg = { Color = "{{colors.background.default.hex}}" },
-	-- use `AnsiColor` to specify one of the ansi color palette values
-	-- (index 0-15) using one of the names "Black", "Maroon", "Green",
-	--  "Olive", "Navy", "Purple", "Teal", "Silver", "Grey", "Red", "Lime",
-	-- "Yellow", "Blue", "Fuchsia", "Aqua" or "White".
 	copy_mode_active_highlight_fg = { AnsiColor = "Black" },
 	copy_mode_inactive_highlight_bg = { Color = "{{colors.primary.default.hex}}" },
 	copy_mode_inactive_highlight_fg = { AnsiColor = "White" },
@@ -77,11 +49,53 @@ local color_scheme = {
 	quick_select_match_bg = { AnsiColor = "Navy" },
 	quick_select_match_fg = { Color = "{{colors.on_surface.default.hex}}" },
 
-	input_selector_label_bg = { AnsiColor = "Black" }, -- (*Since: Nightly Builds Only*)
-	input_selector_label_fg = { Color = "{{colors.on_surface.default.hex}}" }, -- (*Since: Nightly Builds Only*)
+	input_selector_label_bg = { AnsiColor = "Black" },
+	input_selector_label_fg = { Color = "{{colors.on_surface.default.hex}}" },
 
-	launcher_label_bg = { AnsiColor = "Black" }, -- (*Since: Nightly Builds Only*)
-	launcher_label_fg = { Color = "{{colors.on_surface.default.hex}}" }, -- (*Since: Nightly Builds Only*)
+	launcher_label_bg = { AnsiColor = "Black" },
+	launcher_label_fg = { Color = "{{colors.on_surface.default.hex}}" },
+
+	tab_bar = {
+		background = "{{colors.surface.default.hex}}",
+
+		active_tab = {
+			bg_color = "{{colors.surface_container_high.default.hex}}",
+			fg_color = "{{colors.on_surface.default.hex}}",
+			intensity = "Normal",
+			underline = "None",
+			italic = false,
+			strikethrough = false,
+		},
+
+		inactive_tab = {
+			bg_color = "{{colors.surface_container.default.hex}}",
+			fg_color = "{{colors.on_surface_variant.default.hex}}",
+		},
+
+		inactive_tab_hover = {
+			bg_color = "{{colors.surface_container_highest.default.hex}}",
+			fg_color = "{{colors.on_surface.default.hex}}",
+			italic = true,
+		},
+
+		new_tab = {
+			bg_color = "{{colors.surface_container.default.hex}}",
+			fg_color = "{{colors.on_surface_variant.default.hex}}",
+		},
+
+		new_tab_hover = {
+			bg_color = "{{colors.surface_container_highest.default.hex}}",
+			fg_color = "{{colors.on_surface.default.hex}}",
+			italic = true,
+		},
+
+		inactive_tab_edge = "{{colors.outline.default.hex}}",
+	},
 }
 
-return color_scheme
+local window_frame = {
+	active_titlebar_bg = "{{colors.background.default.hex}}",
+	inactive_titlebar_bg = "{{colors.background.default.hex}}",
+}
+
+return { color_scheme = color_scheme, window_frame = window_frame }
