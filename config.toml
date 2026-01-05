@@ -11,7 +11,6 @@ swww_options = [
   "120",
 ]
 
-
 [config.reload_apps_list]
 kitty = true
 
