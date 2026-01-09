@@ -59,6 +59,10 @@ output_path = "~/.config/wezterm/colors.lua"
 input_path = "~/.config/matugen/templates/colors/generic-colors.css"
 output_path = "~/.config/anyrun/colors.css"
 
+[templates.niri]
+input_path = "~/.config/matugen/templates/configs/niri-config.kdl"
+output_path = "~/.config/niri/config.kdl"
+
 # [templates.ags]
 # input_path = "~/.config/matugen/templates/colors/ags-colors.scss"
 # output_path = "~/.config/ags/style/colors.scss"
@@ -72,9 +76,7 @@ output_path = "~/.config/anyrun/colors.css"
 # input_path = "~/.config/matugen/templates/colors/generic-colors.css"
 # output_path = "~/.config/waybar/colors.css"
 
-# [templates.niri]
-# input_path = "~/.config/matugen/templates/configs/niri-config.kdl"
-# output_path = "~/.config/niri/config.kdl"
+
 # [templates.swaync]
 # input_path = "~/.config/matugen/templates/colors/generic-colors.css"
 # output_path = "~/.config/swaync/colors.css"
